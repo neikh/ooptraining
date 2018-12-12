@@ -24,10 +24,12 @@
 	</head>
 	
 	<body>
-		<div id="header">
-			<p>Le royaume des gemmes</p>
-			<span>Free to play entièrement gratuit !</span>
-		</div>
+		<a href="page.php">
+			<div id="header">
+				<p>Le royaume des gemmes</p>
+				<span>Free to play entièrement gratuit !</span>
+			</div>
+		</a>
 		
 		<div id="main">
 		
@@ -88,7 +90,7 @@
 							
 						if (isset($message)) // On a un message à afficher ?
 						{
-						  echo '<p>', $message, '</p>'; // Si oui, on l'affiche.
+						  echo '<p id="message">', $message, '</p>'; // Si oui, on l'affiche.
 						}
 							
 					?>

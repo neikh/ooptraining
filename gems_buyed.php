@@ -15,13 +15,13 @@
 
 	switch ($achat){
 		case 1:
-			$message = "<h1>Oh non!</h1>Le bateau qui a livré vos gemmes a coulé en pleine mer, toutes vos gemmes sont perdues...<br />Seul motif de satisfaction, votre paiement est arrivé en totalité. Ouf!";
+			$message = "<h1>Damnation!</h1>Le bateau qui devait livrer vos gemmes a coulé en pleine mer, toutes vos gemmes sont perdues...<br />Seul motif de satisfaction, votre paiement est arrivé en totalité. Ouf!";
 			break;
 		case 2:
 			$message = "<h1>Oh non!</h1>Des pirates ont attaqué le bateau qui voulait livrer vos belles gemmes et ont pillé une partie de sa cargaison... Surement vos adversaire jaloux de vos talents, vous devriez acheter encore plus de gemmes pour leur montrer qui est le patron !<br />Seul motif de satisfaction, votre paiement est arrivé en totalité. Ouf!";
 			break;
 		case 3:
-			$message = "<h1>Oh non!</h1>Votre cargaison est arrivée en totalité malgré les très faible pro... euh, merde <h1>Groovy!</h1>Vos gemmes sont toutes arrivées !<br />Evidemment, votre paiement est arrivé en totalité. Nous sommes toujours fiables, nous!";
+			$message = "<h1>Oh non!</h1>Votre cargaison est arrivée en totalité malgré la très faible pro... euh, merde <h1>Groovy!</h1>Vos gemmes sont toutes arrivées !<br />Evidemment, votre paiement est arrivé en totalité. Nous sommes toujours fiables, nous!";
 			break;
 	}
 	echo $message;

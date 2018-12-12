@@ -57,18 +57,22 @@
 		public function acheterGemmes($nb_gem, $price){
 			
 			$random = rand(0, 100);
-			$nb_gem = $nb_gem * $random	/ 100;
-			$this->_moneySpent += $price;
-			$this->_gemmes += $nb_gem;
-
-			if ($random == 0){
+			
+			if ($random <= 10){
+				$this->_moneySpent += $price;
+				$this->_gemmes += 0;
 				return self::ARRIVAGE_ECHOUE;
 			}
 			
-			if ($random == 100){
+			if ($random >= 90){
+				$this->_moneySpent += $price;
+				$this->_gemmes += $nb_gem;
 				return self::ARRIVAGE_TOTAL;
 			}
-			
+
+			$nb_gem = $nb_gem * $random	/ 100;
+			$this->_moneySpent += $price;
+			$this->_gemmes += $nb_gem;
 			return self::ARRIVAGE_PARTIEL;
 		}
 		

@@ -144,6 +144,8 @@ function acheterGem(){
 
 function buy(nb_gem, price){
 	var xhr = getXMLHttpRequest();
+	
+	document.getElementById("achat_effectue").innerHTML = "";
 					
 	xhr.onreadystatechange = async function() {
 		if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
@@ -163,6 +165,7 @@ function spendGem(nb_gem){
 					
 	xhr.onreadystatechange = async function() {
 		if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+			document.getElementById("message").innerHTML = "";
 			document.getElementById("UI").innerHTML = xhr.responseText;
 		}
 	};
