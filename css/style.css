@@ -1,0 +1,214 @@
+@font-face {
+    font-family: rabsy;
+    src: url('../font/rabsy.ttf');
+}
+
+#header{
+	height: 150px;
+	width: 100%;
+	border: solid 1px black;
+	background-color: #f2ffe6;
+	box-sizing: border-box;
+}
+
+#header p{
+	font-family: rabsy;
+	text-align: center;
+	font-size: 35px;
+	margin-bottom: 0;
+}
+
+#header span{
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	display: block;
+}
+
+#main{
+	width: 100%;
+	border: solid 1px black;
+	background-color: #f2ffe6;
+	margin-top: 5px;
+	box-sizing: border-box;
+	display: table;
+}
+
+#part-left{
+	width: 100%;
+	box-sizing: border-box;
+	display: table;
+	vertical-align: top;
+}
+
+#part-left p{
+	padding: 0 10px 0 10px;
+	font-weight: bold;
+	text-align: justify;
+}
+
+#compte_a_rebours{
+	color: red;
+	font-size: 20px;
+}
+
+#part-right{
+	width: 15%;
+	box-sizing: border-box;
+	display: table-cell;
+	vertical-align: top;
+}
+
+#part-right hr{
+	width: 85%;
+}
+
+.nb-chara{
+	text-align: center;
+	padding: 10px 10px 2px 10px;
+	font-weight: bold;
+}
+
+#presentation{
+	font-weight: bold;
+	text-align: center;
+	min-width: 180px;
+	width: 20%;
+	display: table-cell;
+}
+
+#ennemis{
+	font-weight: bold;
+	text-align: center;
+	width: 80%;
+	display: table-cell;
+	vertical-align: top;
+}
+
+#ennemis p{
+	font-weight: bold;
+	text-align: center;
+	padding: 0;
+}
+
+#UI{
+	margin-top: 50px;
+}
+
+.nb-chara table{
+	text-align: center;
+	width: 100%;
+}
+
+.nb-chara td{
+	font-size: 12px;
+	font-weight: bold;
+	width: 50%;
+	border: solid 1px black;
+}
+
+#perso-creation{
+	width: 75%;
+	height: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 75px;
+}
+
+.landscape{
+	display: inline-block;
+}
+
+.name-input{
+	position: relative;
+	top: -50px;
+	left: 5px;
+}
+
+.form-button{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 65px;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=text] {
+  padding: 5px 5px;
+}
+
+.opponent{
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	margin-left: 3px;
+	margin-bottom: 3px;
+}
+
+.photoPonent{
+	border: solid 1px black;
+	width: 160px;
+	height: 168px;
+	overflow: hidden;
+	margin-bottom: 3px;
+}
+
+.photo{
+	width: 160px;
+	margin-bottom: 3px;
+}
+
+.opponent:hover .photoPonent {
+	background-color: #e6ffcc;
+}
+
+.myButton {
+	-moz-box-shadow:inset 0px 0px 5px 0px #9acc85;
+	-webkit-box-shadow:inset 0px 0px 5px 0px #9acc85;
+	box-shadow:inset 0px 0px 5px 0px #9acc85;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #74ad5a), color-stop(1, #68a54b));
+	background:-moz-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:-webkit-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:-o-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:-ms-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#74ad5a', endColorstr='#68a54b',GradientType=0);
+	background-color:#74ad5a;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+	border:1px solid #3b6e22;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:11px 29px;
+	text-decoration:none;
+	margin-bottom: 5px;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #68a54b), color-stop(1, #74ad5a));
+	background:-moz-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background:-webkit-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background:-o-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background:-ms-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#68a54b', endColorstr='#74ad5a',GradientType=0);
+	background-color:#68a54b;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
