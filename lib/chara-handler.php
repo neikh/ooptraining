@@ -70,7 +70,7 @@
 				  break;
 				
 				case Personnage::PERSONNAGE_TUE :
-				  $message = 'Vous avez tué ce personnage !';
+				  $message = 'Vous avez tué ce personnage ! Toutes ses gemmes ont été perdues... Mais il pourra les récupérer en payant plus de gemmes !';
 				  
 				  $manager->modifierPersonnage($perso);
 				  $manager->supprimerPersonnage($persoAFrapper);
@@ -78,7 +78,11 @@
 				  break;
 			  }
 			} else {
-				 $message = '<br />Vous n\'avez plus d\'énérgie...<br /> Voulez-vous recharger votre barre contre 50 gemmes ?<br /><br /><a href="#" id="spendGem" class="myButton" onclick="spendGem(50); return false">Recharger</a>';
+					if ($perso->gemmes() >= 50){
+						$message = '<br />Vous n\'avez plus d\'énérgie...<br /> Voulez-vous recharger votre barre contre 50 gemmes ?<br /><br /><a href="#" id="spendGem" class="myButton" onclick="spendGem(50); return false">Recharger</a>';
+					} else {
+						$message = '<br />Vous n\'avez plus d\'énérgie...<br /> Et vous n\'avez pas de gemmes pour recharger votre barre :\'(<br /><br /><div id="moreGems" class="myButton" onclick="acheterGem(); return false">Dépenser 😍</div>';
+					}
 			}
 		}
 	  }
